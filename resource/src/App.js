@@ -19,8 +19,9 @@ const App = () => {
       <CartProvider>
       <ProductProvider>
       <Navbar />
+      <Header />
       <Routes>
-        <Route path='/electronics-app/' element={<Header />}></Route>
+        <Route path='/' element={<Header />}></Route>
         <Route path='/home' element={<Header />}></Route>
         <Route path='/shop' element={<Products />}></Route>
         <Route path='/contact' element={<Contact />}></Route>
