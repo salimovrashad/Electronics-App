@@ -19,7 +19,6 @@ const App = () => {
       <CartProvider>
       <ProductProvider>
       <Navbar />
-      <Header />
       <Routes>
         <Route path='/' element={<Header />}></Route>
         <Route path='/home' element={<Header />}></Route>
