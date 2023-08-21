@@ -9,18 +9,18 @@ const Navbar = () => {
   const {totalItems} = useCart();
 
   return (
-    <nav style={{height: 75}} className="navbar navbar-expand-lg bg-body-tertiary">
-      <div className="container ">
+    <nav style={{height: 75, zIndex: 100}} className="navbar navbar-expand-lg bg-body-tertiary">
+      <div className="container">
         <Link className="navbar-brand" to="/home">
           <img
             src="https://new.axilthemes.com/demo/template/etrade/assets/images/logo/logo.png"
             alt=""
           />
         </Link>
-        <div
-          className="ms-5 navbar-collapse d-flex justify-content-between"
-          id="navbarSupportedContent"
-        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div className="ms-5 navbar-collapse collapse bg-light justify-content-between" id="navbarSupportedContent">
           <ul className="navbar-nav mb-2 mb-lg-0">
             <li className="nav-item">
               <Link className="nav-link" to="/home">
