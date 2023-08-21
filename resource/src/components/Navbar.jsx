@@ -1,8 +1,7 @@
 import React, { useContext, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { ProductContext } from "../context/ProductProvider";
 import { useCart } from "react-use-cart";
-import { key } from "fontawesome";
 
 const Navbar = () => {
   const [product] = useContext(ProductContext);
@@ -12,12 +11,12 @@ const Navbar = () => {
   return (
     <nav style={{height: 75}} className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container ">
-        <a className="navbar-brand" href="/">
+        <Link className="navbar-brand" to="/home">
           <img
             src="https://new.axilthemes.com/demo/template/etrade/assets/images/logo/logo.png"
             alt=""
           />
-        </a>
+        </Link>
         <div
           className="ms-5 navbar-collapse d-flex justify-content-between"
           id="navbarSupportedContent"
